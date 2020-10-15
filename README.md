@@ -81,7 +81,7 @@ const Component =  () => {
 ## Concurrent Mode
 
 A way to batch updates to the DOM where each batch update will stop for a few ms to see if there is a higher priority task to be executed, e.g. User events, so we can unblock the main thread during a render.
-That is being done trying to batch updates in chunks of 60ms to fit into the 6 frames per seconds that all major browsers use.
+That is being done trying to batch updates in chunks of 16ms to fit into the 60 frames per seconds that all major browsers use.
 
 ### SuspenseList
 
